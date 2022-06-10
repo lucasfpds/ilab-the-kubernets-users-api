@@ -1,0 +1,128 @@
+2022-06-10T18:08:26,582-0300 [51735 1] com.newrelic INFO: Writing to New Relic log file: /Users/rebeca.ferreira/Desktop/repos/users-api/newrelic/logs/newrelic_agent.log
+2022-06-10T18:08:26,582-0300 [51735 1] com.newrelic INFO: JRE vendor Oracle Corporation version 18.0.1.1
+2022-06-10T18:08:26,582-0300 [51735 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 18.0.1.1+2-6
+2022-06-10T18:08:26,582-0300 [51735 1] com.newrelic INFO: OS Mac OS X version 12.4 arch x86_64
+2022-06-10T18:08:26,583-0300 [51735 1] com.newrelic INFO: Agent Host: 8363-MB IP: 10.0.0.105
+2022-06-10T18:08:26,583-0300 [51735 1] com.newrelic INFO: New Relic Agent v7.7.0 is initializing...
+2022-06-10T18:08:27,086-0300 [51735 17] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2022-06-10T18:08:27,739-0300 [51735 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.eu01.nr-data.net:443
+2022-06-10T18:08:27,972-0300 [51735 1] com.newrelic INFO: Setting audit_mode to false
+2022-06-10T18:08:28,069-0300 [51735 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/rebeca.ferreira/Desktop/repos/users-api/newrelic/./newrelic.yml
+2022-06-10T18:08:28,073-0300 [51735 1] com.newrelic INFO: New Relic Agent v7.7.0 has started
+2022-06-10T18:08:28,073-0300 [51735 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@5e8c92f4
+2022-06-10T18:08:28,073-0300 [51735 1] com.newrelic INFO: Premain startup complete in 2.197ms
+2022-06-10T18:08:31,269-0300 [51735 1] com.newrelic INFO: Server Info: Apache Tomcat/9.0.63
+2022-06-10T18:08:38,081-0300 [51735 40] com.newrelic INFO: Host name is 8363-MB, display host 8363-MB for application userapi
+2022-06-10T18:08:38,082-0300 [51735 40] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2022-06-10T18:08:40,259-0300 [51735 40] com.newrelic INFO: Collector redirection to collector-001.eu01.nr-data.net:443
+2022-06-10T18:08:42,376-0300 [51735 40] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2022-06-10T18:08:42,376-0300 [51735 40] com.newrelic INFO: Agent run id: BbVXM9LB9jnkADWexxl9NARio7MoAAIBAAAnIQEAAMoXAgQZfTQCAwAFNy43LjAABzgzNjMtTUIAB3VzZXJhcGk
+2022-06-10T18:08:42,376-0300 [51735 40] com.newrelic INFO: Agent 51735@8363-MB/userapi connected to collector.eu01.nr-data.net:443
+2022-06-10T18:08:42,377-0300 [51735 40] com.newrelic INFO: Reporting to: https://rpm.eu.newrelic.com/accounts/3514055/applications/427635714
+2022-06-10T18:08:42,378-0300 [51735 40] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2022-06-10T18:08:42,378-0300 [51735 40] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu.newrelic.com/metric/v1
+2022-06-10T18:08:42,378-0300 [51735 40] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2022-06-10T18:08:42,379-0300 [51735 40] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2022-06-10T18:08:42,379-0300 [51735 40] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu.newrelic.com/metric/v1
+2022-06-10T18:08:42,379-0300 [51735 40] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2022-06-10T18:08:43,375-0300 [51735 40] com.newrelic INFO: Real user monitoring is enabled for application userapi. Auto instrumentation is enabled.
+2022-06-10T18:08:43,377-0300 [51735 40] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2022-06-10T18:17:48,995-0300 [51735 15] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2022-06-10T18:17:49,013-0300 [51735 44] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@6a250749 tried to finish but ServiceManager not started
+2022-06-10T18:17:50,693-0300 [51735 15] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2022-06-10T18:17:56,830-0300 [53203 1] com.newrelic INFO: Writing to New Relic log file: /Users/rebeca.ferreira/Desktop/repos/users-api/newrelic/logs/newrelic_agent.log
+2022-06-10T18:17:56,830-0300 [53203 1] com.newrelic INFO: JRE vendor Oracle Corporation version 18.0.1.1
+2022-06-10T18:17:56,830-0300 [53203 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 18.0.1.1+2-6
+2022-06-10T18:17:56,830-0300 [53203 1] com.newrelic INFO: OS Mac OS X version 12.4 arch x86_64
+2022-06-10T18:17:56,830-0300 [53203 1] com.newrelic INFO: Agent Host: 8363-MB IP: 10.0.0.105
+2022-06-10T18:17:56,830-0300 [53203 1] com.newrelic INFO: New Relic Agent v7.7.0 is initializing...
+2022-06-10T18:17:57,292-0300 [53203 17] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2022-06-10T18:17:57,874-0300 [53203 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.eu01.nr-data.net:443
+2022-06-10T18:17:58,089-0300 [53203 1] com.newrelic INFO: Setting audit_mode to false
+2022-06-10T18:17:58,183-0300 [53203 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/rebeca.ferreira/Desktop/repos/users-api/newrelic/./newrelic.yml
+2022-06-10T18:17:58,187-0300 [53203 1] com.newrelic INFO: New Relic Agent v7.7.0 has started
+2022-06-10T18:17:58,187-0300 [53203 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@5e8c92f4
+2022-06-10T18:17:58,187-0300 [53203 1] com.newrelic INFO: Premain startup complete in 4.754ms
+2022-06-10T18:18:01,016-0300 [53203 1] com.newrelic INFO: Server Info: Apache Tomcat/9.0.63
+2022-06-10T18:18:08,202-0300 [53203 40] com.newrelic INFO: Host name is 8363-MB, display host 8363-MB for application userapi
+2022-06-10T18:18:08,202-0300 [53203 40] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2022-06-10T18:18:10,142-0300 [53203 40] com.newrelic INFO: Collector redirection to collector-001.eu01.nr-data.net:443
+2022-06-10T18:18:11,620-0300 [53203 40] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2022-06-10T18:18:11,620-0300 [53203 40] com.newrelic INFO: Agent run id: Be7iZ2TgMXpbADWexxl9NARio7WAAAIBAAAnIQEAAM_TAgQZfTQCAwAFNy43LjAABzgzNjMtTUIAB3VzZXJhcGk
+2022-06-10T18:18:11,620-0300 [53203 40] com.newrelic INFO: Agent 53203@8363-MB/userapi connected to collector.eu01.nr-data.net:443
+2022-06-10T18:18:11,620-0300 [53203 40] com.newrelic INFO: Reporting to: https://rpm.eu.newrelic.com/accounts/3514055/applications/427635714
+2022-06-10T18:18:11,622-0300 [53203 40] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2022-06-10T18:18:11,622-0300 [53203 40] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu.newrelic.com/metric/v1
+2022-06-10T18:18:11,622-0300 [53203 40] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2022-06-10T18:18:11,623-0300 [53203 40] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2022-06-10T18:18:11,623-0300 [53203 40] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu.newrelic.com/metric/v1
+2022-06-10T18:18:11,623-0300 [53203 40] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2022-06-10T18:18:13,140-0300 [53203 40] com.newrelic INFO: Real user monitoring is enabled for application userapi. Auto instrumentation is enabled.
+2022-06-10T18:18:13,141-0300 [53203 40] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2022-06-10T18:19:21,961-0300 [53203 15] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2022-06-10T18:19:21,978-0300 [53203 44] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@3496d4e5 tried to finish but ServiceManager not started
+2022-06-10T18:19:23,053-0300 [53203 15] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2022-06-10T18:19:48,789-0300 [53330 1] com.newrelic INFO: Writing to New Relic log file: /Users/rebeca.ferreira/Desktop/repos/users-api/newrelic/logs/newrelic_agent.log
+2022-06-10T18:19:48,789-0300 [53330 1] com.newrelic INFO: JRE vendor Oracle Corporation version 18.0.1.1
+2022-06-10T18:19:48,789-0300 [53330 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 18.0.1.1+2-6
+2022-06-10T18:19:48,790-0300 [53330 1] com.newrelic INFO: OS Mac OS X version 12.4 arch x86_64
+2022-06-10T18:19:48,790-0300 [53330 1] com.newrelic INFO: Agent Host: 8363-MB IP: 10.0.0.105
+2022-06-10T18:19:48,790-0300 [53330 1] com.newrelic INFO: New Relic Agent v7.7.0 is initializing...
+2022-06-10T18:19:49,235-0300 [53330 17] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2022-06-10T18:19:49,872-0300 [53330 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.eu01.nr-data.net:443
+2022-06-10T18:19:50,078-0300 [53330 1] com.newrelic INFO: Setting audit_mode to false
+2022-06-10T18:19:50,210-0300 [53330 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/rebeca.ferreira/Desktop/repos/users-api/newrelic/./newrelic.yml
+2022-06-10T18:19:50,215-0300 [53330 1] com.newrelic INFO: New Relic Agent v7.7.0 has started
+2022-06-10T18:19:50,215-0300 [53330 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@5e8c92f4
+2022-06-10T18:19:50,216-0300 [53330 1] com.newrelic INFO: Premain startup complete in 1.949ms
+2022-06-10T18:19:53,055-0300 [53330 1] com.newrelic INFO: Server Info: Apache Tomcat/9.0.63
+2022-06-10T18:20:00,229-0300 [53330 40] com.newrelic INFO: Host name is 8363-MB, display host 8363-MB for application userapi
+2022-06-10T18:20:00,230-0300 [53330 40] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2022-06-10T18:20:02,096-0300 [53330 40] com.newrelic INFO: Collector redirection to collector-001.eu01.nr-data.net:443
+2022-06-10T18:20:04,101-0300 [53330 40] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2022-06-10T18:20:04,101-0300 [53330 40] com.newrelic INFO: Agent run id: BQ7WdHbBmovjADWexxl9NARio7X4AAIBAAAnIQEAANBSAgQZfTQCAwAFNy43LjAABzgzNjMtTUIAB3VzZXJhcGk
+2022-06-10T18:20:04,102-0300 [53330 40] com.newrelic INFO: Agent 53330@8363-MB/userapi connected to collector.eu01.nr-data.net:443
+2022-06-10T18:20:04,102-0300 [53330 40] com.newrelic INFO: Reporting to: https://rpm.eu.newrelic.com/accounts/3514055/applications/427635714
+2022-06-10T18:20:04,104-0300 [53330 40] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2022-06-10T18:20:04,104-0300 [53330 40] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu.newrelic.com/metric/v1
+2022-06-10T18:20:04,104-0300 [53330 40] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2022-06-10T18:20:04,105-0300 [53330 40] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2022-06-10T18:20:04,105-0300 [53330 40] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu.newrelic.com/metric/v1
+2022-06-10T18:20:04,106-0300 [53330 40] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2022-06-10T18:20:05,697-0300 [53330 40] com.newrelic INFO: Real user monitoring is enabled for application userapi. Auto instrumentation is enabled.
+2022-06-10T18:20:05,698-0300 [53330 40] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2022-06-10T18:28:44,534-0300 [53330 15] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2022-06-10T18:28:44,542-0300 [53330 44] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@1f8e70e1 tried to finish but ServiceManager not started
+2022-06-10T18:28:46,287-0300 [53330 15] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2022-06-10T18:32:47,701-0300 [54976 1] com.newrelic INFO: Writing to New Relic log file: /Users/rebeca.ferreira/Desktop/repos/users-api/newrelic/logs/newrelic_agent.log
+2022-06-10T18:32:47,701-0300 [54976 1] com.newrelic INFO: JRE vendor Oracle Corporation version 18.0.1.1
+2022-06-10T18:32:47,701-0300 [54976 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 18.0.1.1+2-6
+2022-06-10T18:32:47,701-0300 [54976 1] com.newrelic INFO: OS Mac OS X version 12.4 arch x86_64
+2022-06-10T18:32:47,701-0300 [54976 1] com.newrelic INFO: Agent Host: 8363-MB IP: 10.0.0.105
+2022-06-10T18:32:47,701-0300 [54976 1] com.newrelic INFO: New Relic Agent v7.7.0 is initializing...
+2022-06-10T18:32:48,107-0300 [54976 17] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2022-06-10T18:32:48,665-0300 [54976 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.eu01.nr-data.net:443
+2022-06-10T18:32:48,850-0300 [54976 1] com.newrelic INFO: Setting audit_mode to false
+2022-06-10T18:32:48,940-0300 [54976 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/rebeca.ferreira/Desktop/repos/users-api/newrelic/./newrelic.yml
+2022-06-10T18:32:48,943-0300 [54976 1] com.newrelic INFO: New Relic Agent v7.7.0 has started
+2022-06-10T18:32:48,943-0300 [54976 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@5e8c92f4
+2022-06-10T18:32:48,944-0300 [54976 1] com.newrelic INFO: Premain startup complete in 1.744ms
+2022-06-10T18:32:51,622-0300 [54976 1] com.newrelic INFO: Server Info: Apache Tomcat/9.0.63
+2022-06-10T18:32:58,954-0300 [54976 40] com.newrelic INFO: Host name is 8363-MB, display host 8363-MB for application userapi
+2022-06-10T18:32:58,956-0300 [54976 40] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2022-06-10T18:33:01,308-0300 [54976 40] com.newrelic INFO: Collector redirection to collector-001.eu01.nr-data.net:443
+2022-06-10T18:33:02,239-0300 [54976 40] com.newrelic INFO: Max payload size is 1.000.000 bytes
+2022-06-10T18:33:02,239-0300 [54976 40] com.newrelic INFO: Agent run id: Bf62BaTxeuDEADWexxl9NARio7kEAAIBAAAnIQEAANbAAgQZfTQCAwAFNy43LjAABzgzNjMtTUIAB3VzZXJhcGk
+2022-06-10T18:33:02,239-0300 [54976 40] com.newrelic INFO: Agent 54976@8363-MB/userapi connected to collector.eu01.nr-data.net:443
+2022-06-10T18:33:02,240-0300 [54976 40] com.newrelic INFO: Reporting to: https://rpm.eu.newrelic.com/accounts/3514055/applications/427635714
+2022-06-10T18:33:02,241-0300 [54976 40] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2022-06-10T18:33:02,241-0300 [54976 40] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu.newrelic.com/metric/v1
+2022-06-10T18:33:02,241-0300 [54976 40] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2022-06-10T18:33:02,242-0300 [54976 40] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2022-06-10T18:33:02,242-0300 [54976 40] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu.newrelic.com/metric/v1
+2022-06-10T18:33:02,242-0300 [54976 40] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2022-06-10T18:33:04,372-0300 [54976 40] com.newrelic INFO: Real user monitoring is enabled for application userapi. Auto instrumentation is enabled.
+2022-06-10T18:33:04,373-0300 [54976 40] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2022-06-10T18:33:16,862-0300 [54976 15] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2022-06-10T18:33:16,870-0300 [54976 44] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@7deaab0c tried to finish but ServiceManager not started
+2022-06-10T18:33:18,026-0300 [54976 15] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
