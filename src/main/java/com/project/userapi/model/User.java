@@ -35,6 +35,20 @@ public class User {
     public User(){
 
     }
+    public User(String name, String cpf, String telephone, String birthDate, String email) {
+        this.name = name;
+        this.cpf = cpf;
+        this.telephone = telephone;
+        this.birthDate = birthDate;
+        this.email = email;
+    }
+    public User(String cpf, String telephone, String birthDate, String email) {
+
+        this.cpf = cpf;
+        this.telephone = telephone;
+        this.birthDate = birthDate;
+        this.email = email;
+    }
     public Integer getId() {
         return id;
     }
@@ -86,6 +100,8 @@ public class User {
     public String toString() {
         return "User [birthDate=" + birthDate + ", cpf=" + cpf + ", email=" + email + ", id=" + id + ", name=" + name
                 + ", telephone=" + telephone + "]";
+    }
+    public void setId(int i) {
     }
 
 }

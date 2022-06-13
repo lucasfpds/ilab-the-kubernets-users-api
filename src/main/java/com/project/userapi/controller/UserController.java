@@ -1,9 +1,9 @@
 package com.project.userapi.controller;
 
 
-import java.util.List;
-import java.util.Optional;
 
+import com.project.userapi.model.User;
+import com.project.userapi.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.project.userapi.model.User;
-import com.project.userapi.service.IUserService;
 
 @RestController
 public class UserController {
@@ -29,28 +26,28 @@ public class UserController {
     }
 
     @GetMapping("/read")
-    public List<User> getUsers(){
+    public ResponseEntity<Object> getUsers(){
         return service.readUsers();
     }
 
     @GetMapping("/read/{id}")
-    public Optional<User> getUserById(@PathVariable Integer id){
+    public ResponseEntity<Object> getUserById(@PathVariable Integer id){
         return service.readByIdUser(id);
     }
 
     @DeleteMapping("/delete/{id}")
-    public Boolean deleteUser(@PathVariable Integer id){
+    public ResponseEntity<Object> deleteUser(@PathVariable Integer id){
         return service.deleteUser(id);
     }
 
     @PostMapping("/create/")
-    public User createUser(@RequestBody User novo) {
+    public ResponseEntity<Object> createUser(@RequestBody User novo) {
         return service.createUser(novo);
     }
 
-    @PutMapping("/update")
-    public User updatUser (@RequestBody User user){
-        return service.updateUser(user);
+    @PutMapping("/update/{id}")
+    public ResponseEntity<Object> updatUser (@RequestBody User user, @PathVariable Integer id){
+        return service.updateUser(user, id);
     }
    
 }
