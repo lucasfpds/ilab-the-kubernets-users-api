@@ -38,8 +38,12 @@ public class RestService {
         CloseableHttpResponse response = client.execute(httpPost);
         String bodyAsString = EntityUtils.toString(response.getEntity());
         client.close();
-        ResponseBody responseBody = new Gson().fromJson(bodyAsString,
-        ResponseBody.class);
-        return new UsernamePasswordAuthenticationToken(responseBody.getPrincipal(), null, Collections.emptyList());
+        if (bodyAsString != null) {
+            ResponseBody responseBody = new Gson().fromJson(bodyAsString,
+            ResponseBody.class);
+    
+            return new UsernamePasswordAuthenticationToken(responseBody.getPrincipal(), null, Collections.emptyList());
+        }
+        return null;
         }
     }
