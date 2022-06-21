@@ -37,6 +37,10 @@ import com.google.gson.Gson;
 @AutoConfigureMockMvc
 public class ControllerTest {
 
+     @Test
+	void contextLoads() {
+	}
+
     @Autowired
   private TestRestTemplate restTemplate;
 
@@ -45,6 +49,7 @@ public class ControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
+
 
 
     @Test
