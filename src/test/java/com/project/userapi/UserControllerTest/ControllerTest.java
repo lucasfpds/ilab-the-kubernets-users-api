@@ -4,13 +4,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import javax.print.attribute.standard.Media;
-
 import org.assertj.core.api.Assertions;
 
 import org.junit.Test;
 
-import org.junit.runner.RunWith;
+
 import org.mockito.BDDMockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -23,7 +21,6 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -74,7 +71,7 @@ public class ControllerTest {
          mockMvc.perform(MockMvcRequestBuilders.post("/create/")
                                                .contentType(MediaType.APPLICATION_JSON)
                                                .headers(headers)
-                                               .content(newUser)).andExpect((MockMvcResultMatchers.status().isOk));
+                                               .content(newUser)).andExpect((MockMvcResultMatchers.status().isOk()));
        
     }
     @Test
