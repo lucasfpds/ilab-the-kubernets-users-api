@@ -103,9 +103,9 @@ public class UserServiceImpl implements IUserService {
             throw new ApiRequestException("{\"message\":\"Campo 'Id' é obrigatório.\"}");
         }
         try {
-            User newUser = new User(userOptional.get().getId(), userOptional.get().getName(),
-            userOptional.get().getCpf(), userOptional.get().getTelephone(), userOptional.get().getBirthDate(),
-            userOptional.get().getEmail());
+            User newUser = new User(userOptional.get().getId(), user.getName(),
+            user.getCpf(), user.getTelephone(), user.getBirthDate(),
+            user.getEmail());
             dao.save(newUser);
             return ResponseEntity.status(200).body(newUser);
         } catch (Exception e) {
