@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import javax.print.attribute.standard.Media;
 
 import org.assertj.core.api.Assertions;
 
@@ -32,10 +33,15 @@ import com.google.gson.Gson;
 
 
 
-@RunWith(SpringRunner.class)
+
+
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
 public class ControllerTest {
+
+     @Test
+	void contextLoads() {
+	}
 
     @Autowired
   private TestRestTemplate restTemplate;
@@ -46,29 +52,52 @@ public class ControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    private String token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0ZV9hb192aXZvQHRlc3RlLmNvbSIsImlzcyI6InRoZUt1YmVybmV0ZXNBUEkiLCJleHAiOjE2NTU4MzA5Njl9.q0Kdq_fdI2fZkw3G0u0dni9wvFbpqAwwY7ZR2QRdDz4";
+
+
 
     @Test
-    public void createdUserReturnStatus201() {
+    public void createdUserReturnStatus201() throws Exception{
+
+     HttpHeaders headers = new HttpHeaders();
+     headers.add("Authorization", "Bearer " + token);
 
          User user = new User(1,"Guilherme", "12345698798", "32365987456", "15-05-1978", "gui@email.com");
-         BDDMockito.when(dao.save(user)).thenReturn(user);
-         ResponseEntity<String> responseEntity = restTemplate.postForEntity("/create/", user, String.class);
-         Assertions.assertThat(responseEntity.getStatusCodeValue()).isEqualTo(201);    
+
+         Gson gson = new Gson();
+         String newUser = gson.toJson(user);
+     //     BDDMockito.when(dao.save(user)).thenReturn(user);
+     //     ResponseEntity<String> responseEntity = restTemplate.postForEntity("/create/", user, String.class);
+     //     Assertions.assertThat(responseEntity.getStatusCodeValue()).isEqualTo(201);
+         
+         mockMvc.perform(MockMvcRequestBuilders.post("/create/")
+                                               .contentType(MediaType.APPLICATION_JSON)
+                                               .headers(headers)
+                                               .content(newUser)).andExpect((MockMvcResultMatchers.status().isOk));
        
     }
     @Test
     public void createdUserWithNameIsNullReturnStatus400() {
+     HttpHeaders headers = new HttpHeaders();
+     headers.add("Authorization", "Bearer " + token);
 
          User user = new User( "12345698798", "32365987456", "15-05-1978", "gui@email.com");
-         BDDMockito.when(dao.save(user)).thenReturn(user);
-         ResponseEntity<String> responseEntity = restTemplate.postForEntity("/create/", user, String.class);
-         Assertions.assertThat(responseEntity.getStatusCodeValue()).isEqualTo(400);    
-       
+     //     BDDMockito.when(dao.save(user)).thenReturn(user);
+     //     ResponseEntity<String> responseEntity = restTemplate.postForEntity("/create/", user, String.class);
+     //     Assertions.assertThat(responseEntity.getStatusCodeValue()).isEqualTo(400);    
+          Gson gson = new Gson();
+          String newUser = gson.toJson(user);
+          mockMvc.perform(MockMvcRequestBuilders.post("/create/")
+          .contentType(MediaType.APPLICATION_JSON)
+          .headers(headers)
+          .content(newUser)).andExpect((MockMvcResultMatchers.status().isBadRequest()));
     }
 
 
     @Test
     public void listAllUsersReturnStatusCode200() {
+     
+
          List<User> users  = Arrays.asList(new User(1,"Guilherme", "12345698798", "32365987456", "15-05-1978", "gui@email.com"),
                                            new User(2,"João", "12349998798", "32365999456", "15-05-1978", "jo@ao.com"));
      
