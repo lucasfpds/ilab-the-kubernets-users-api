@@ -103,8 +103,11 @@ public class UserServiceImpl implements IUserService {
             throw new ApiRequestException("{\"message\":\"Campo 'Id' é obrigatório.\"}");
         }
         try {
-            dao.save(user);
-            return ResponseEntity.status(200).body(user);
+            User newUser = new User(userOptional.get().getId(), userOptional.get().getName(),
+            userOptional.get().getCpf(), userOptional.get().getTelephone(), userOptional.get().getBirthDate(),
+            userOptional.get().getEmail());
+            dao.save(newUser);
+            return ResponseEntity.status(200).body(newUser);
         } catch (Exception e) {
             e.printStackTrace();
             throw new ApiRequestException("Não foi possível atualizar usuário");
