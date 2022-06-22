@@ -18,6 +18,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -77,7 +78,7 @@ public class ControllerTest {
        
     }
     @Test
-    public void createdUserWithNameIsNullReturnStatus400() {
+    public void createdUserWithNameIsNullReturnStatus400() throws Exception {
      HttpHeaders headers = new HttpHeaders();
      headers.add("Authorization", "Bearer " + token);
 
