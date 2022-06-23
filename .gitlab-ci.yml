@@ -1,0 +1,63 @@
+image: docker:latest
+
+stages:
+- build
+- test
+- docker
+- deploy
+
+build:
+  image: maven:3-openjdk-17
+  stage: build
+  script:
+    - mvn clean package
+  artifacts:
+    paths:
+      - target/*.jar
+  only:
+    - main
+    - develop
+
+test:
+  image: maven:3-openjdk-17
+  stage: test
+  script:
+    - mvn test
+  only:
+    - main
+    - develop
+
+docker:
+  stage: docker
+
+  services:
+  - docker:dind
+
+  before_script:
+    - docker info
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+  
+  dependencies:
+  - test
+  
+  script:
+    - docker build -t "$CI_REGISTRY_USER/api-user-pipe:latest" .
+    - docker push "$CI_REGISTRY_USER/api-user-pipe:latest"
+    
+  only:
+    - main
+    - develop
+
+# deploy:
+#   when: manual
+#   stage: deploy
+#   image: frankpercicotte/ansible
+#   script:
+#     - cat << EOF > key-k8s-alunos-ilab.pem
+#       $CI_KEY_PEM
+#       "EOF"
+#     - chmod 400 key-k8s-alunos-ilab.pem
+#     - ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts ansible.yml -u ubuntu --private-key key-k8s-alunos-ilab.pem
+#   only:
+#     - main
+#     - develop
