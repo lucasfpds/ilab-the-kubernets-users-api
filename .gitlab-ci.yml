@@ -48,16 +48,16 @@ docker:
     - main
     - develop
 
-# deploy:
-#   when: manual
-#   stage: deploy
-#   image: frankpercicotte/ansible
-#   script:
-#     - cat << EOF > key-k8s-alunos-ilab.pem
-#       $CI_KEY_PEM
-#       "EOF"
-#     - chmod 400 key-k8s-alunos-ilab.pem
-#     - ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts ansible.yml -u ubuntu --private-key key-k8s-alunos-ilab.pem
-#   only:
-#     - main
-#     - develop
+deploy:
+  image: matshareyourscript/aws-helm-kubectl
+  stage: deploy
+  before_script:
+    - aws eks --region us-east-1 update-kubeconfig  --name ilab
+    - export KUBECONFIG=/root/.kube/config
+  script:
+    - kubectl delete -f deployment-order-api.yml -n grupo-4-namespace
+    - kubectl apply -f deployment-order-api.yml -n grupo-4-namespace  
+   
+  only:
+    - main
+    - develop
