@@ -18,7 +18,7 @@ spec:
       containers:
         - name: rvsfrebeca-users-api
           image: rvsfrebeca/imagem-users-api
-          imagePullPolixy: Always
+          imagePullPolicy: Always
           ports:
             - containerPort: 8081
           env:
