@@ -57,7 +57,6 @@ deploy:
   script:
     - kubectl delete -f deployment-user-api-.yml -n grupo-4-namespace
     - kubectl apply -f deployment-user-api-.yml -n grupo-4-namespace  
-  
   only:
     - main
     - develop
