@@ -83,7 +83,7 @@ O que foi implementado durante o projeto:
 <br/>
 
 * Retorno: <br/>
-{<br/> "Aplicação administradores"  <br/>
+{<br/> ""Welcome to User API""  <br/>
 } <br/> 
 </br>
 
