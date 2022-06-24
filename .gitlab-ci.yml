@@ -41,8 +41,8 @@ docker:
   - test
   
   script:
-    - docker build -t "$CI_REGISTRY_USER/api-user-pipe:latest" .
-    - docker push "$CI_REGISTRY_USER/api-user-pipe:latest"
+    - docker build -t "$CI_REGISTRY_USER/imagem-users-api" .
+    - docker push "$CI_REGISTRY_USER/imagem-users-api"
     
   only:
     - main
